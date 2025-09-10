@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First Webpage</title>
+        <!--collapse prevent border from duplicating-->
+        <!--td background color is the color of non-header table cells-->
+        <!--#id_image is the id of my image, border sets a border (who would've thought)-->
+        <!--padding moves the image inwards, box-shadow shows the shadow on hover-->
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 8px;
+            }
+            td {
+                background-color: #dddddd;
+            }
+            #id_image {
+                border: 1px solid #18191d;
+                padding: 5px;
+            }
+            #id_image:hover {
+                box-shadow: 0 0 6px 1px #18191d;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Vitaliy Golubenko</h1>
+        <h2>Web Technologies Frontend</h2>
+        <h3>About Me</h3>
+        <p>My name is Vitaliy and I am a student at Astana IT University.
+            I liked computers since my childhood and that's why I'm studying here now.</p>
+
+        <hr>
+
+        <h2>These are my hobbies:</h2>
+        <ol>
+            <li>Watching YouTube</a></li>
+            <li><a href="https://apps.ankiweb.net/">Language Learning</a></li>
+            <li><a href="https://github.com/checkybox/">Coding</a></li>
+        </ol>
+
+        <hr>
+
+        <h2>And these are my favorite websites:</h2>
+        <ul>
+            <li><a href="https://www.youtube.com">www.youtube.com</a></li>
+            <li><a href="https://www.github.com">www.github.com</a></li>
+            <li><a href="https://www.photos.google.com">www.photos.google.com</a></li>
+        </ul>
+
+        <hr>
+        
+        <a href="my_id_card.jpg" target="_blank">
+            <img src="my_id_card.jpg" alt="My ID card" width="384" height="512" id="id_image">
+        </a>
+
+        <h1></h1> <!--spacer-->
+
+        <button type="button" onclick="alert('JK it actually works 😃')">This button doesn't work yet!</button>
+
+        <h1></h1> <!--spacer-->
+
+        <table border="1">
+            <tr>
+                <th>Subject</th>
+                <th>Day</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>Web Technologies</td>
+                <td>Monday</td>
+                <td>12:00-12:50</td>
+            </tr>
+            <tr>
+                <td>Kazakh Language</td>
+                <td>Tuesday</td>
+                <td>14:00-15:50</td>
+            </tr>
+            <tr>
+                <td>Software Design Patterns</td>
+                <td>Wednesday</td>
+                <td>16:00-17:50</td>
+            </tr>
+            <tr>
+                <td>Design and Analysis of Algorithms</td>
+                <td>Thursday</td>
+                <td>16:00-17:50</td>
+            </tr>
+            <tr>
+                <td>Operating Systems</td>
+                <td>Friday</td>
+                <td>12:00-12:50</td>
+            </tr>
+        </table>
+
+        <h1></h1>
+
+        <p>My mood today is 🙃, sometimes 🫩, but mostly 😴</p>
+
+        <form>
+            <!--<br> used for new lines-->
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" value="John Ultrakill"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" value="no@thankyou.com"><br>
+            <label for="color">Favorite color:</label><br>
+            <input type="color" id="color" name="color" value="99c1f1"><br><br>
+            <input type="submit" value="Sumbit">
+        </form>
+
+    </body>
+</html>
