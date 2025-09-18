@@ -1,41 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>My First Webpage</title>
-        <!--collapse prevent border from duplicating-->
-        <!--td background color is the color of non-header table cells-->
-        <!--#id_image is the id of my image, border sets a border (who would've thought)-->
-        <!--padding moves the image inwards, box-shadow shows the shadow on hover-->
-        <style>
-            table, th, td {
-                border: 1px solid black;
-                border-collapse: collapse;
-                padding: 8px;
-            }
-            td {
-                background-color: #dddddd;
-            }
-            #id_image {
-                border: 1px solid #18191d;
-                padding: 5px;
-            }
-            #id_image:hover {
-                box-shadow: 0 0 6px 1px #18191d;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <h1>Vitaliy Golubenko</h1>
         <h2>Web Technologies Frontend</h2>
         <h3>About Me</h3>
-        <p>My name is Vitaliy and I am a student at Astana IT University.
+        <p>My name is Vitaliy, and I am a student at Astana IT University.
             I liked computers since my childhood and that's why I'm studying here now.</p>
 
         <hr>
 
+        <!-- New code begins here -->
+        <div class="image-row">
+            <a href="#img1"><img src="/assets/kessoku.jpg" alt="Kessoku Band"></a>
+            <a href="#img2"><img src="/assets/koraii.jpg" alt="Koraii"></a>
+            <a href="#img3"><img src="/assets/akfg.jpg" alt="Asian Kung-Fu Generation"></a>
+        </div>
+
+        <!-- Modals for each image -->
+        <div id="img1" class="modal">
+            <a href="#" class="close">&times;</a>
+            <img src="/assets/kessoku.jpg" alt="Kessoku Band">
+        </div>
+        <div id="img2" class="modal">
+            <a href="#" class="close">&times;</a>
+            <img src="/assets/koraii.jpg" alt="Koraii">
+        </div>
+        <div id="img3" class="modal">
+            <a href="#" class="close">&times;</a>
+            <img src="/assets/akfg.jpg" alt="Asian Kung-Fu Generation">
+        </div>
+        <!-- New code ends here -->
+
         <h2>These are my hobbies:</h2>
         <ol>
-            <li>Watching YouTube</a></li>
+            <li>Watching YouTube</li>
             <li><a href="https://apps.ankiweb.net/">Language Learning</a></li>
             <li><a href="https://github.com/checkybox/">Coding</a></li>
         </ol>
@@ -51,8 +53,8 @@
 
         <hr>
         
-        <a href="my_id_card.jpg" target="_blank">
-            <img src="my_id_card.jpg" alt="My ID card" width="384" height="512" id="id_image">
+        <a href="/assets/my_id_card.jpg" target="_blank">
+            <img src="/assets/my_id_card.jpg" alt="My ID card" width="384" height="512" id="id_image">
         </a>
 
         <h1></h1> <!--spacer-->
@@ -61,7 +63,7 @@
 
         <h1></h1> <!--spacer-->
 
-        <table border="1">
+        <table>
             <tr>
                 <th>Subject</th>
                 <th>Day</th>
@@ -109,5 +111,7 @@
             <input type="submit" value="Submit">
         </form>
 
+
+        <p class="emoji-list">&#127878; &#128171; &#128206;</p>
     </body>
 </html>
