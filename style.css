@@ -1,0 +1,138 @@
+/* Shared styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 20px;
+}
+.gigantic-text {
+    font-size: 48px;
+    color: #18191d;
+}
+.big-text {
+    font-size: 32px;
+    color: #18191d;
+}
+.medium-text {
+    font-size: 24px;
+    color: #18191d;
+}
+.medium-text-light {
+    font-size: 24px;
+    font-weight: lighter;
+    color: #18191d;
+}
+.small-text {
+    font-size: 16px;
+    color: #18191d;
+}
+.smaller-text {
+    font-size: 8px;
+    color: #18191d;
+}
+a {
+    color: #1246a8;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Top header section */
+#main-header {
+    text-align: center;
+    font-family: "Roboto Light", sans-serif;
+    padding: 10px;
+    background-color: bisque;
+}
+
+/* Hobbies list section */
+#hobbies-list {
+    text-align: center;
+    font-family: "Roboto Thin", sans-serif;
+    font-weight: normal;
+    background-color: #daa45d;
+    border-top: 1px solid #18191d;
+    border-bottom: 1px solid #18191d;
+}
+#hobbies-list ol {
+    list-style-position: outside;
+    padding-left: 0;
+}
+
+/* Favorite websites section */
+#favorite-websites {
+    text-align: center;
+    font-family: "Roboto Thin", sans-serif;
+    font-weight: normal;
+    background-color: bisque;
+}
+#favorite-websites ol {
+    list-style-position: outside;
+    padding-left: 0;
+}
+
+/* Centered image section */
+.centered-image {
+    text-align: center;
+    font-family: "Roboto Thin", sans-serif;
+    font-weight: normal;
+    background-color: bisque;
+    padding: 10px;
+}
+
+/* Button */
+.button {
+    background-color: #daa45d;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #c48f4a;
+}
+.button-section {
+    background-color: bisque;
+}
+
+.emoji-section {
+    background-color: bisque;
+    padding: 10px;
+}
+.emoji-list {
+    font-size: 24px;
+    text-align: center;
+    background-color: bisque;
+    padding: 10px;
+}
+
+/* Legacy code */
+table {
+    border-collapse: collapse;
+    background-color: bisque;
+}
+th {
+    border: 1px solid black;
+    padding: 8px;
+    background-color: white;
+}
+td {
+    border: 1px solid black;
+    padding: 8px;
+    background-color: #dddddd;
+}
+#id_image {
+    padding: 0;
+    box-shadow: 0 0 6px 0 #18191d;
+}
+#id_image:hover {
+    box-shadow: 0 0 9px 3px #18191d;
+}
