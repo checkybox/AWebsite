@@ -2,11 +2,12 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 .divider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex; /* use flexbox layout */
+    justify-content: center; /* horizontal alignment */
+    align-items: center; /* vertical alignment */
     flex-direction: column;
     margin: 0;
     padding: 20px;
@@ -36,6 +37,8 @@
     font-size: 8px;
     color: #18191d;
 }
+
+/* Link styles */
 a {
     color: #1246a8;
     text-decoration: none;
@@ -86,8 +89,15 @@ a:hover {
     background-color: bisque;
     padding: 10px;
 }
+#id_image {
+    padding: 0;
+    box-shadow: 0 0 6px 0 #18191d;
+}
+#id_image:hover {
+    box-shadow: 0 0 9px 3px #18191d;
+}
 
-/* Button */
+/* Buttons style */
 .button {
     background-color: #daa45d;
     color: black;
@@ -95,6 +105,7 @@ a:hover {
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
+    box-shadow: 1px 1px 4px 0 #18191d;
 }
 .button:hover {
     background-color: #c48f4a;
@@ -115,6 +126,7 @@ a:hover {
     padding: 10px;
 }
 
+/* Form section */
 .form-section {
     background-color: #79797e;
     padding: 10px;
@@ -126,15 +138,16 @@ a:hover {
     margin-bottom: 10px;
 }
 
+/* Links section */
 .nav-links {
     margin: 0 auto;
     width: fit-content;
     padding-left: 20px;
 }
 
-/* Legacy code */
+/* Table section */
 table {
-    border-collapse: collapse;
+    border-collapse: collapse; /* adjacent borders merge into a single one */
     background-color: bisque;
 }
 th {
@@ -146,11 +159,4 @@ td {
     border: 1px solid black;
     padding: 8px;
     background-color: #dddddd;
-}
-#id_image {
-    padding: 0;
-    box-shadow: 0 0 6px 0 #18191d;
-}
-#id_image:hover {
-    box-shadow: 0 0 9px 3px #18191d;
 }
