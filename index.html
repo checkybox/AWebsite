@@ -1,67 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>My First Webpage</title>
-        <!--collapse prevent border from duplicating-->
-        <!--td background color is the color of non-header table cells-->
-        <!--#id_image is the id of my image, border sets a border (who would've thought)-->
-        <!--padding moves the image inwards, box-shadow shows the shadow on hover-->
-        <style>
-            table, th, td {
-                border: 1px solid black;
-                border-collapse: collapse;
-                padding: 8px;
-            }
-            td {
-                background-color: #dddddd;
-            }
-            #id_image {
-                border: 1px solid #18191d;
-                padding: 5px;
-            }
-            #id_image:hover {
-                box-shadow: 0 0 6px 1px #18191d;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
+
     <body>
-        <h1>Vitaliy Golubenko</h1>
-        <h2>Web Technologies Frontend</h2>
-        <h3>About Me</h3>
-        <p>My name is Vitaliy and I am a student at Astana IT University.
-            I liked computers since my childhood and that's why I'm studying here now.</p>
+        <div class="divider" id="main-header">
+            <h1 class="gigantic-text">Vitaliy Golubenko</h1>
+            <h2 class="medium-text" style="font-weight: lighter;">Web Technologies Frontend</h2>
+            <h3 class="medium-text">About Me</h3>
+            <p class="small-text">I'll become a developer someday</p>
+            <p class="smaller-text">(maybe)</p>
+        </div>
 
-        <hr>
+        <div class="divider" id="hobbies-list">
+            <h2 class="medium-text">These are my hobbies:</h2>
+            <ol>
+                <li>Watching YouTube</li>
+                <li><a href="https://apps.ankiweb.net/">Language Learning</a></li>
+                <li><a href="https://github.com/checkybox/">Coding</a></li>
+            </ol>
+        </div>
 
-        <h2>These are my hobbies:</h2>
-        <ol>
-            <li>Watching YouTube</a></li>
-            <li><a href="https://apps.ankiweb.net/">Language Learning</a></li>
-            <li><a href="https://github.com/checkybox/">Coding</a></li>
-        </ol>
+        <div class="divider" id="favorite-websites">
+            <h2 class="medium-text">And these are my favorite websites:</h2>
+            <ul>
+                <li><a href="https://www.youtube.com">www.youtube.com</a></li>
+                <li><a href="https://www.github.com">www.github.com</a></li>
+                <li><a href="https://www.photos.google.com">www.photos.google.com</a></li>
+            </ul>
+        </div>
 
-        <hr>
+        <div class="divider centered-image">
+            <a href="my_id_card.jpg" target="_blank">
+                <img src="my_id_card.jpg" alt="My ID card" width="384" height="512" id="id_image">
+            </a>
+        </div>
 
-        <h2>And these are my favorite websites:</h2>
-        <ul>
-            <li><a href="https://www.youtube.com">www.youtube.com</a></li>
-            <li><a href="https://www.github.com">www.github.com</a></li>
-            <li><a href="https://www.photos.google.com">www.photos.google.com</a></li>
-        </ul>
+        <div class="divider button-section">
+            <button class="button" type="button" onclick="alert('JK it actually works 😃')">This button doesn't work yet!</button>
+        </div>
 
-        <hr>
-        
-        <a href="my_id_card.jpg" target="_blank">
-            <img src="my_id_card.jpg" alt="My ID card" width="384" height="512" id="id_image">
-        </a>
-
-        <h1></h1> <!--spacer-->
-
-        <button type="button" onclick="alert('JK it actually works 😃')">This button doesn't work yet!</button>
-
-        <h1></h1> <!--spacer-->
-
-        <table border="1">
+        <table class="divider" id="schedule-table">
             <tr>
                 <th>Subject</th>
                 <th>Day</th>
@@ -94,12 +77,11 @@
             </tr>
         </table>
 
-        <h1></h1>
-
-        <p>My mood today is 🙃, sometimes 🫩, but mostly 😴</p>
+        <div class="divider emoji-section">
+            <p class="emoji-list"></p>
+        </div>
 
         <form>
-            <!--<br> used for new lines-->
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name" value="John Ultrakill"><br>
             <label for="email">Email:</label><br>
