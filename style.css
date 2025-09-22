@@ -1,4 +1,13 @@
 /* Shared styles */
+:root {
+    --neutral-white: #ebebeb;
+    --discord-dark: #18191d;
+    --link-blue: #1246a8;
+    --jetbrains-dark: #19191c;
+    --jetbrains-light: #a3a3a4;
+    --almost-white: #ebebeb;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,38 +23,123 @@
 }
 .gigantic-text {
     font-size: 48px;
-    color: #18191d;
+    color: var(--discord-dark);
 }
 .big-text {
     font-size: 32px;
-    color: #18191d;
+    color: var(--discord-dark);
 }
 .medium-text {
     font-size: 24px;
-    color: #18191d;
+    color: var(--discord-dark);
 }
 .medium-text-light {
     font-size: 24px;
     font-weight: lighter;
-    color: #18191d;
+    color: var(--discord-dark);
 }
 .small-text {
     font-size: 16px;
-    color: #18191d;
+    color: var(--discord-dark);
 }
 .smaller-text {
     font-size: 8px;
-    color: #18191d;
+    color: var(--discord-dark);
 }
 
 /* Link styles */
 a {
-    color: #1246a8;
+    color: var(--link-blue);
     text-decoration: none;
 }
 a:hover {
     text-decoration: underline;
 }
+
+/* flexbox branch */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--jetbrains-dark);
+}
+.navbar-branding {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 30px;
+    margin-left: 30px;
+}
+.navbar-branding p {
+    color: var(--almost-white);
+}
+.navbar-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-right: 30px;
+    list-style: none;
+}
+.navbar-links a {
+    color: var(--almost-white);
+}
+.montserrat-navbar-links {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 32px;
+}
+.montserrat-regular {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch; /* Ensure all cards have equal height */
+    gap: 20px;
+    padding: 30px;
+    background-color: bisque;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    flex: 1;
+    min-width: 0;
+    border: 2px solid var(--discord-dark);
+    background-color: white;
+}
+.media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white; /* Hides ugly background bleed */
+    margin: 10px;
+    flex: 1; /* Make media take up available vertical space */
+}
+.media img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    display: block;;
+}
+.btn {
+    margin-top: auto;
+}
+.under-image-text { /* todo: fix this */
+
+}
+
 
 /* Top header section */
 #main-header {
@@ -60,9 +154,9 @@ a:hover {
     text-align: center;
     font-family: "Roboto Thin", sans-serif;
     font-weight: normal;
-    background-color: #daa45d;
-    border-top: 1px solid #18191d;
-    border-bottom: 1px solid #18191d;
+    background-color: #daa45d; /* change this for the love of god */
+    border-top: 1px solid var(--discord-dark);
+    border-bottom: 1px solid var(--discord-dark);
 }
 #hobbies-list ol {
     list-style-position: outside;
@@ -91,10 +185,10 @@ a:hover {
 }
 #id_image {
     padding: 0;
-    box-shadow: 0 0 6px 0 #18191d;
+    box-shadow: 0 0 6px 0 var(--discord-dark);
 }
 #id_image:hover {
-    box-shadow: 0 0 9px 3px #18191d;
+    box-shadow: 0 0 9px 3px var(--discord-dark);
 }
 
 /* Buttons style */
@@ -105,7 +199,7 @@ a:hover {
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
-    box-shadow: 1px 1px 4px 0 #18191d;
+    box-shadow: 1px 1px 4px 0 var(--discord-dark);
 }
 .button:hover {
     background-color: #c48f4a;

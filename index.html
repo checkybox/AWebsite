@@ -5,8 +5,51 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>My First Webpage</title>
         <link rel="stylesheet" href="style.css">
+
+        <!-- Google Fonts setup -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
+        <header class="navbar">
+            <div class="navbar-branding">
+                <img src="logo.png" alt="logo" width="64" height="64">
+                <p class="montserrat-navbar-links">My First Webpage</p>
+            </div>
+            <ul class="navbar-links montserrat-navbar-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </header>
+
+        <div class="cards-container">
+            <div class="card">
+                <div class="media">
+                    <img src="image1.jpg" alt="image">
+                </div>
+                <h3>Frieren Coffee</h3>
+                <p>That's what happens when you fall to the same trap again.</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+            <div class="card">
+                <div class="media">
+                    <img src="image2.jpg" alt="image" width="200" height="200">
+                </div>
+                <h3>センコさん the Fox</h3>
+                <p>Fox.</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+            <div class="card">
+                <div class="media">
+                    <img src="image3.jpg" alt="image" width="200" height="200">
+                </div>
+                <h3>An example of Internet Meme</h3>
+                <p>Is it even possible to win?!</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+
         <div class="divider" id="main-header">
             <h1 class="gigantic-text">Vitaliy Golubenko</h1>
             <h2 class="medium-text" style="font-weight: lighter;">Web Technologies Frontend</h2>
