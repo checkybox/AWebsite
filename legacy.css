@@ -1,3 +1,39 @@
+.divider {
+    display: flex; /* use flexbox layout */
+    justify-content: center; /* horizontal alignment */
+    align-items: center; /* vertical alignment */
+    flex-direction: column;
+    margin: 0;
+    padding: 20px;
+}
+
+/* text-related classes */
+.gigantic-text {
+    font-size: 48px;
+    color: var(--discord-dark);
+}
+.big-text {
+    font-size: 32px;
+    color: var(--discord-dark);
+}
+.medium-text {
+    font-size: 24px;
+    color: var(--discord-dark);
+}
+.medium-text-light {
+    font-size: 24px;
+    font-weight: lighter;
+    color: var(--discord-dark);
+}
+.small-text {
+    font-size: 16px;
+    color: var(--discord-dark);
+}
+.smaller-text {
+    font-size: 8px;
+    color: var(--discord-dark);
+}
+
 /* Top header section */
 #main-header {
     text-align: center;

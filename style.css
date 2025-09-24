@@ -14,43 +14,6 @@
     padding: 0;
 }
 
-/* todo: move to legacy */
-.divider {
-    display: flex; /* use flexbox layout */
-    justify-content: center; /* horizontal alignment */
-    align-items: center; /* vertical alignment */
-    flex-direction: column;
-    margin: 0;
-    padding: 20px;
-}
-
-/* text-related classes */
-.gigantic-text {
-    font-size: 48px;
-    color: var(--discord-dark);
-}
-.big-text {
-    font-size: 32px;
-    color: var(--discord-dark);
-}
-.medium-text {
-    font-size: 24px;
-    color: var(--discord-dark);
-}
-.medium-text-light {
-    font-size: 24px;
-    font-weight: lighter;
-    color: var(--discord-dark);
-}
-.small-text {
-    font-size: 16px;
-    color: var(--discord-dark);
-}
-.smaller-text {
-    font-size: 8px;
-    color: var(--discord-dark);
-}
-
 /* Link styles */
 a {
     color: var(--link-blue);
@@ -60,7 +23,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* flexbox branch */
+/* Top navigation bar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -98,6 +61,7 @@ a:hover {
     list-style: none; /* remove dots from the <ul> */
 }
 
+/* Custom Google fonts */
 .montserrat-navbar-links {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -116,7 +80,6 @@ a:hover {
 /* Everything related to the cards section */
 .cards-container {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: stretch; /* Ensure all cards have equal height */
     gap: 20px;
@@ -157,7 +120,7 @@ a:hover {
     margin-top: auto; /* Shift button to the bottom of the container */
 }
 
-/* Grid WIP */
+/* Grid layout */
 .grid-wrapper {
     display: grid;
     grid-template-areas:
@@ -171,19 +134,46 @@ a:hover {
                                          (take all remaining space) */
 }
 .grid-wrapper > header {
-    grid-area: header; background-color: var(--jetbrains-dark);
+    grid-area: header;
+    background-color: var(--jetbrains-dark);
 }
 .grid-wrapper > nav {
-    grid-area: sidebar; background-color: var(--grey-sidebar);
+    grid-area: sidebar;
+    background-color: var(--grey-sidebar);
 }
 .grid-wrapper > main {
-    grid-area: main; background-color: var(--grey-main);
+    grid-area: main;
+    background-color: dimgrey;
 }
 .grid-wrapper > footer {
-    grid-area: footer; background-color: lightpink;
+    grid-area: footer;
+    text-align: center;
+    background-color: var(--jetbrains-dark);
+    color: var(--almost-white);
+    padding: 20px;
 }
 
-/* Gallery WIP */
+/* Projects grid */
+.projects-grid {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 30px;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid var(--jetbrains-dark);
+    background-color: var(--almost-white);
+    padding: 20px;
+}
+.project-button {
+    margin-top: 20px;
+}
+
+/* Grid gallery */
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -191,19 +181,6 @@ a:hover {
     gap: 20px;
     padding: 30px;
 }
-/*.gallery img {*/
-/*    display: block;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    object-fit: cover;*/
-/*    border: 2px solid var(--jetbrains-dark);*/
-/*    transition: 0.2s;*/
-/*}*/
-/*.gallery img:hover {*/
-/*    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);*/
-/*    transform: translateY(-10px);*/
-/*}*/
-
 .image-container {
     position: relative;
 }
@@ -216,15 +193,14 @@ a:hover {
     transition: 0.2s;
 }
 .image-container span {
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* Cover the parent container fully */
     bottom: 0;
     left: 0;
     right: 0;
     top: 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     background: black;
     color: white;
@@ -233,4 +209,37 @@ a:hover {
 }
 .image-container:hover span {
     opacity: 0.7;
+}
+
+/* Grid layout for portfolio section */
+.grid-wrapper-portfolio {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main sidebar"
+        "footer footer";
+    grid-template-rows: auto 1fr auto; /* Header and footer size is determined by their content,
+                                          while main part (1fr) takes all available space */
+    grid-template-columns: 1fr 300px; /* Same as in .grid-wrapper,
+                                         but sidebar and main are swapped,
+                                         and sidebar is bigger by 100px */
+}
+.grid-wrapper-portfolio > header {
+    grid-area: header;
+    background-color: var(--jetbrains-dark);
+}
+.grid-wrapper-portfolio > nav {
+    grid-area: sidebar;
+    background-color: var(--grey-sidebar);
+}
+.grid-wrapper-portfolio > main {
+    grid-area: main;
+    background-color: var(--grey-main);
+}
+.grid-wrapper-portfolio > footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: var(--jetbrains-dark);
+    color: var(--almost-white);
+    padding: 20px;
 }
