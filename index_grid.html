@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My First Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Temporarily use legacy CSS -->
+    <link rel="stylesheet" href="legacy.css">
+
+    <!-- Google Fonts setup -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="grid-wrapper">
+        <header class="navbar">
+            <div class="navbar-branding">
+                <img src="assets/images/logo.png" alt="logo" width="64" height="64">
+                <a class="montserrat-navbar-links" href="https://checkybox.github.io/AWebsite">AWebsite</a>
+            </div>
+            <ul class="navbar-links montserrat-navbar-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index_grid.html">Grid</a></li>
+            </ul>
+        </header>
+
+        <nav style="color: var(--almost-white); padding: 10px;">Sidebar</nav>
+
+        <main>
+<!--            <div class="gallery">-->
+<!--                <img src="assets/images/logo3.png" alt="image1">-->
+<!--                <img src="assets/images/logo3.png" alt="image2">-->
+<!--                <img src="assets/images/logo3.png" alt="image3">-->
+<!--                <img src="assets/images/logo3.png" alt="image4">-->
+<!--                <img src="assets/images/logo3.png" alt="image5">-->
+<!--                <img src="assets/images/logo3.png" alt="image6">-->
+<!--                <img src="assets/images/logo3.png" alt="image7">-->
+<!--                <img src="assets/images/logo3.png" alt="image8">-->
+<!--                <img src="assets/images/logo3.png" alt="image9">-->
+<!--            </div>-->
+            <div class="gallery">
+                <div class="image-container">
+                    <img src="assets/images/kessoku.jpg" alt="kessoku">
+                    <span>Description</span>
+                </div>
+                <div class="image-container">
+                    <img src="assets/images/akfg.jpg" alt="akfg">
+                    <span>Description</span>
+                </div>
+                <div class="image-container">
+                    <img src="assets/images/koraii.jpg" alt="koraii">
+                    <span>Description</span>
+                </div>
+                <div class="image-container">
+                    <img src="assets/images/image3.jpg" alt="staring">
+                    <span>Description</span>
+                </div>
+                <div class="image-container">
+                    <img src="assets/images/image2.jpg" alt="fox">
+                    <span>Description</span>
+                </div>
+                <div class="image-container">
+                    <img src="assets/images/image1.jpg" alt="coffee">
+                    <span>Description</span>
+                </div>
+                <div class="image-container">
+                    <img src="assets/images/image4.png" alt="staring">
+                    <span>Description</span>
+                </div>
+                <div class="image-container">
+                    <img src="assets/images/logo3.png" alt="staring">
+                    <span>Description</span>
+                </div>
+                <div class="image-container">
+                    <img src="assets/images/image3.jpg" alt="staring">
+                    <span>Description</span>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="divider form-section">
+                <form>
+                    <input class="input-field" type="text" id="name" name="name" placeholder="Name"><br>
+                    <input class="input-field" type="email" id="email" name="email" placeholder="Email"><br>
+                    <input class="input-field" type="color" id="color" name="color"><br><br>
+                    <input class="button" type="submit" value="Submit">
+                </form>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

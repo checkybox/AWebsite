@@ -5,126 +5,80 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>My First Webpage</title>
         <link rel="stylesheet" href="style.css">
+        <!-- Temporarily use legacy CSS -->
+        <link rel="stylesheet" href="legacy.css">
 
         <!-- Google Fonts setup -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
+
     <body>
         <header class="navbar">
             <div class="navbar-branding">
-                <img src="logo.png" alt="logo" width="64" height="64">
-                <p class="montserrat-navbar-links">My First Webpage</p>
+                <img src="assets/images/logo.png" alt="logo" width="64" height="64">
+                <a class="montserrat-navbar-links" href="https://checkybox.github.io/AWebsite">AWebsite</a>
             </div>
             <ul class="navbar-links montserrat-navbar-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="index_grid.html">Grid</a></li>
             </ul>
         </header>
 
         <div class="cards-container">
             <div class="card">
                 <div class="media">
-                    <img src="image1.jpg" alt="image">
+                    <img src="assets/images/kessoku.jpg" alt="image">
                 </div>
-                <h3>Frieren Coffee</h3>
-                <p>That's what happens when you fall to the same trap again.</p>
+                <h3>Image 1</h3>
+                <p>Description</p>
                 <a href="#" class="btn">Read more</a>
             </div>
             <div class="card">
                 <div class="media">
-                    <img src="image2.jpg" alt="image" width="200" height="200">
+                    <img src="assets/images/koraii.jpg" alt="image">
                 </div>
-                <h3>センコさん the Fox</h3>
-                <p>Fox.</p>
+                <h3>Image 2</h3>
+                <p>Description</p>
                 <a href="#" class="btn">Read more</a>
             </div>
             <div class="card">
                 <div class="media">
-                    <img src="image3.jpg" alt="image" width="200" height="200">
+                    <img src="assets/images/akfg.jpg" alt="image">
                 </div>
-                <h3>An example of Internet Meme</h3>
-                <p>Is it even possible to win?!</p>
+                <h3>Image 3</h3>
+                <p>Description</p>
                 <a href="#" class="btn">Read more</a>
             </div>
         </div>
-
-        <div class="divider" id="main-header">
-            <h1 class="gigantic-text">Vitaliy Golubenko</h1>
-            <h2 class="medium-text" style="font-weight: lighter;">Web Technologies Frontend</h2>
-            <h3 class="medium-text">About Me</h3>
-            <p class="small-text">I'll become a developer someday</p>
-            <p class="smaller-text">(maybe)</p>
-        </div>
-
-        <div class="divider" id="hobbies-list">
-            <h2 class="medium-text">These are my hobbies:</h2>
-            <ol>
-                <li>Watching YouTube</li>
-                <li><a href="https://apps.ankiweb.net/">Language Learning</a></li>
-                <li><a href="https://github.com/checkybox/">Coding</a></li>
-            </ol>
-        </div>
-
-        <div class="divider" id="favorite-websites">
-            <h2 class="medium-text">And these are my favorite websites:</h2>
-<!--            <ul>-->
-<!--                <li><a href="https://www.youtube.com">www.youtube.com</a></li>-->
-<!--                <li><a href="https://www.github.com">www.github.com</a></li>-->
-<!--                <li><a href="https://www.photos.google.com">www.photos.google.com</a></li>-->
-<!--            </ul>-->
-            <nav class="nav-links medium-text">
-                <a href="https://github.com/checkybox" target="_blank">GitHub</a>
-                <a href="https://www.youtube.com" target="_blank">YouTube</a>
-            </nav>
-        </div>
-
-        <div class="divider centered-image">
-            <a href="my_id_card.jpg" target="_blank">
-                <img src="my_id_card.jpg" alt="My ID card" width="384" height="512" id="id_image">
-            </a>
-        </div>
-
-        <div class="divider button-section">
-            <button class="button" type="button" onclick="alert('JK it actually works 😃')">This button doesn't work yet!</button>
-        </div>
-
-        <table class="divider" id="schedule-table">
-            <tr>
-                <th>Subject</th>
-                <th>Day</th>
-                <th>Time</th>
-            </tr>
-            <tr>
-                <td>Web Technologies</td>
-                <td>Monday</td>
-                <td>12:00-12:50</td>
-            </tr>
-            <tr>
-                <td>Kazakh Language</td>
-                <td>Tuesday</td>
-                <td>14:00-15:50</td>
-            </tr>
-            <tr>
-                <td>Software Design Patterns</td>
-                <td>Wednesday</td>
-                <td>16:00-17:50</td>
-            </tr>
-            <tr>
-                <td>Design and Analysis of Algorithms</td>
-                <td>Thursday</td>
-                <td>16:00-17:50</td>
-            </tr>
-            <tr>
-                <td>Operating Systems</td>
-                <td>Friday</td>
-                <td>12:00-12:50</td>
-            </tr>
-        </table>
-
-        <div class="divider emoji-section">
-            <p class="emoji-list">&#127878; &#127747; &#128206;</p>
+        <!-- may be deleted, padding-top fixes wasted space on top of container-->
+        <div class="cards-container" style="padding-top: 0px;">
+            <div class="card">
+                <div class="media">
+                    <img src="assets/images/kessoku.jpg" alt="image">
+                </div>
+                <h3>Image 1</h3>
+                <p>Description</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+            <div class="card">
+                <div class="media">
+                    <img src="assets/images/koraii.jpg" alt="image">
+                </div>
+                <h3>Image 2</h3>
+                <p>Description</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+            <div class="card">
+                <div class="media">
+                    <img src="assets/images/akfg.jpg" alt="image">
+                </div>
+                <h3>Image 3</h3>
+                <p>Description</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
         </div>
 
         <div class="divider form-section">
